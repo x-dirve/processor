@@ -1,0 +1,42 @@
+{
+    "name": "@x-drive/processor",
+    "version": "1.0.0",
+    "description": "XLab 能用到的各种处理器",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/x-drive/processor.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/x-drive/processor/issues"
+    },
+    "homepage": "https://github.com/x-drive/processor#readme",
+    "scripts": {
+        "dev": "swc src -D ./src/bin  --config-file .swcrc -d dist -w",
+        "compile": "swc src -D ./src/bin --config-file .swcrc -d dist",
+        "build": "yarn compile && yarn gen-declaration",
+        "gen-declaration": "tsc --emitDeclarationOnly"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "dependencies": {
+        "@x-drive/lru": "1.0.0",
+        "@x-drive/utils": "1.1.24",
+        "@x-drive/injection": "1.0.0"
+    },
+    "devDependencies": {
+        "tslib": "2.3.0",
+        "chokidar": "3.5.3",
+        "@swc/cli": "0.1.57",
+        "typescript": "4.3.4",
+        "@swc/core": "1.2.171",
+        "@types/koa": "2.13.5",
+        "@x-9lab/xlab": "^1.4.1",
+        "@types/node": "16.11.40",
+        "@x-drive/changelog": "1.1.6"
+    },
+    "files": [
+        "dist"
+    ]
+}

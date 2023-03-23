@@ -1,0 +1,51 @@
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+
+# Nodejs files #
+################
+/node_modules/
+
+# Dev files #
+#############
+.idea/
+.idea
+
+# Dist files #
+##############
+dist/
+@types/
+
+# Log files #
+##############
+private/logs/
+
+# editor files #
+##################
+.editorconfig
+.jsbeautifyrc
+jsconfig.json
+typings/
+.eslintrc.json
+
+# local config
+config.lo.json
+webpack.lo.config.js
+config.lo.ts
+config.lo.js
+
+# lock file
+package-lock.json
